@@ -6,7 +6,7 @@
 
 // require gulp
   source = "web/app/themes/your_theme_name/";
-  proxy = "http://localhost/your_theme_name/web/";
+  proxy = "http://localhost/your_file_name/web/";
   
   const {src,dest,watch,series} = require("gulp");
   const sass = require("gulp-sass")(require("sass"));
