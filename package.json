@@ -1,5 +1,5 @@
 {
-  "name": "your_name_here",
+  "name": "your_theme_name",
   "version": "1.0.0",
   "description": "<p align=\"center\">   <a href=\"https://roots.io/bedrock/\">     <img alt=\"Bedrock\" src=\"https://cdn.roots.io/app/uploads/logo-bedrock.svg\" height=\"100\">   </a> </p>",
   "main": "gulpfile.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/olivierraude/your_name_here.git"
+    "url": "git+https://github.com/olivierraude/your_theme_name.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/olivierraude/your_name_here/issues"
+    "url": "https://github.com/olivierraude/your_theme_name/issues"
   },
-  "homepage": "https://github.com/olivierraude/your_name_here#readme",
+  "homepage": "https://github.com/olivierraude/your_theme_name#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "browser-sync": "^2.29.3",
