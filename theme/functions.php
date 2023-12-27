@@ -3,6 +3,8 @@
 function theme_supports()
 {
   add_theme_support('title-tag');
+  add_theme_support('menus');
+  register_nav_menu('header', 'En tête du menu');
 }
 
 function theme_register_assets()
