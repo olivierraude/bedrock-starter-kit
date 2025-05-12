@@ -69,8 +69,7 @@
     "optimize-autoloader": true,
     "preferred-install": "dist",
     "allow-plugins": {
-      "composer/installers": true,
-      "roots/wordpress-core-installer": true
+      "composer/installers": true
     }
   },
   "minimum-stability": "dev",
