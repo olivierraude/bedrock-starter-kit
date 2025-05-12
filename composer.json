@@ -55,7 +55,6 @@
     "wpackagist-plugin/custom-post-type-ui": "^1.13",
     "wpackagist-plugin/classic-editor": "^1.6",
     "wpackagist-plugin/wp-swiper": "^1.0",
-    "wpackagist-plugin/woocommerce": "^8.2",
     "twig/cache-extra": "^3.7",
     "rankmath/seo-by-rank-math": "^1.0",
     "wpackagist-plugin/aryo-activity-log": "^2.11",
