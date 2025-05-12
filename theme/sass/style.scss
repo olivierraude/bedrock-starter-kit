@@ -1,4 +1,4 @@
-@import 'base/normalize';
-@import 'base/settings';
-@import 'base/base';
-@import 'layout/sections';
+@use 'base/normalize';
+@use 'base/settings';
+@use 'base/base';
+@use 'layout/sections';

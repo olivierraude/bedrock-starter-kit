@@ -1,5 +1,8 @@
+@use 'base/settings';
+
 h1 {
-  font-family: $primary-font;
+  font-family: settings.$primary-font;
+  color: settings.$navy;
   font-size: 1.4rem;
   letter-spacing: 1px;
   line-height: 1.4rem;

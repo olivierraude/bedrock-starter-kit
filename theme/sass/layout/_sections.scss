@@ -1,5 +1,8 @@
+@use 'base/settings';
+
 section {
-  max-width: $section-width;
-  padding: $section-padding;
+  max-width: settings.$section-width;
+  padding: settings.$section-padding;
   margin: auto;
+  border: settings.$border;
 }
