@@ -10,26 +10,29 @@
   
   const {src,dest,watch,series} = require("gulp");
   const sass = require("gulp-sass")(require("sass"));
-  const sourcemaps = require('gulp-sourcemaps');
-  const plumber = require('gulp-plumber');
   const postcss = require("gulp-postcss");
   const autoprefixer = require("gulp-autoprefixer");
-  const cleanCSS = require('gulp-clean-css');
+  const cssnano = require("cssnano");
   const rename = require("gulp-rename");
   const uglify = require("gulp-uglify");
+  // const tercer = require("gulp-tercer");
   const browserSync = require("browser-sync").create();
 
 // Sass Task
 function scssTask() {
-  return gulp.src(source + 'scss/**/*.scss')
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(sass.sync().on('error', sass.logError))
-    .pipe(postcss([autoprefixer()])) // <- autoprefixer utilisé ici
-    .pipe(cleanCSS({ compatibility: 'ie11' }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('web/app/themes/your-theme-name/dist/css'));
-}
+  return src(source + "sass/**/*scss", { sourcemaps: true })
+    .pipe(sass())
+    .pipe(
+      autoprefixer({
+        // browsers: ["> 1%", "last 2 versions"],
+        cascade: false,
+      })
+    )
+    .pipe(dest(source + "sass"))
+    .pipe(postcss([cssnano()]))
+    .pipe(rename({ suffix: ".min" }))
+    .pipe(dest(source + "dist/css", { sourcemaps: "." }));
+};
 
 // Script Task
 function scriptTask() {
